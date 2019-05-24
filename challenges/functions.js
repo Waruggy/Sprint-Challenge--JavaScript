@@ -7,8 +7,8 @@
   * In the body of the function return the callback with the two parameters that you created
 */
 
-function consume (a, b, cb) {
-  return cb(a,b);
+function consume(a, b, callback) {
+  return callback(a,b);
 };
 
 
@@ -42,7 +42,7 @@ console.log(consume("Mary","Poppins", greeting)); // Hello Mary Poppins, nice to
 // Explain in your own words why `nestedfunction()` can access the variable `internal`.
 
 // Explanation: 
-// The reason nestedfunction() can access the variable internal is because, the internal variable is logged inside the nestedfunction.
+// The reason nestedfunction() can access the variable internal is because, the internal variable is receives is inheriting along with the parent in the nestedfunction().
 
 const external = "I'm outside the function";
 
